@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'hillcrest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hospital_camp5',
+        'USER': 'root',
+        'PASSWORD': 'Aishu@2002',
+        'HOST': 'localhost',    
+        'PORT': '3306',
     }
 }
 
